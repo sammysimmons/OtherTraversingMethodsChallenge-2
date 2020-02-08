@@ -5,4 +5,8 @@ $(document).ready(function() {
         $(this).removeClass("black");
     });
 
+    $(".theButton").mouseout(function() {
+        $(this).removeClass("black");
+    });
+
 });
