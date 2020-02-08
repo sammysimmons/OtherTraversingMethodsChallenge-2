@@ -1,12 +1,11 @@
+//will wait uuntil page ready
 $(document).ready(function() {
 
-    //returns to original colour on mouseout 
-    $(".theButton").mouseout(function() {
-        $(this).removeClass("black");
-    });
+    /*when table header is clicked , removes selection class from all other table rows and
+      adds the selection class to this table headers row only*/
+    $("th").click(function() {
+        $("tr").children().removeClass("selection")
+        $(this).siblings().addClass("selection");
 
-    $(".theButton").mouseout(function() {
-        $(this).removeClass("black");
     });
-
 });
